@@ -53,7 +53,5 @@ This is a flask app that performs question-answering on various pdf files. You c
 * You can then go to the localhost on which the app is running.
 
 ![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/1.png)
-
-![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/2.png)
 ![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/3.png)
 ![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/4.png)
