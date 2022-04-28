@@ -8,7 +8,12 @@ This is a flask app that performs question-answering on various pdf files. You c
 
 ### Folder for Pdf documents - docs
 
-* Create a folder named "docs" and add your pdf files in this folder. These files will work as data for question-answering system. I have added 3 files here you can choose whatever files you want to choose.
+* When you will upload the pdf file, it will get stored in this folder.
+
+
+### Folder for visualisation images - Static/Images
+* This is the folder where the wordcloud visualisation of uploaded pdf file will be stored.
+
 
 ### Models
 
@@ -19,9 +24,11 @@ This is a flask app that performs question-answering on various pdf files. You c
    > from cdqa.utils.download import download_model <br>
    > download_model(model='bert-squad_1.1', dir='./models')
 
+
 ### Templates
 
-* Create a folder named "templates" and here we are gonna add our html files for the app. I have added two files here - home.html and after.html
+* Create a folder named "templates" and here we are gonna add our html files for the app. I have added three files here - home.html, success.html, and after.html
+
 
 ### qa.py
 
@@ -34,17 +41,12 @@ This is a flask app that performs question-answering on various pdf files. You c
 
 ### app.py
 
-* This is the python file to run flask app where we have specified routes.
+* This contains python code to run flask app where we have specified routes.
+* It is also specified that the maximum file size is 5 MB and allowed extension is .pdf
 
  We have defined a function in this file: <br>
-   > def home(): <br>
-      data1 = request.form['a'] <br>
-      pred = cdqa_pipeline.predict(data1,3) <br>
-      return render_template('after.html', data=pred) <br>
-    
-* Here, the first line is fetching the question that you have asked.
-* Second line is predicting the questions's answer and as you may have noticed we have two parameters here in predict() where data1 obviously is the question that has been asked and the numerical value 3 means that we will get top 3 answers of the given question.
-* And the last line is just to return the 'after.html' page where we can see the answer.
+   > app.config['MAX_CONTENT_LENGTH'] = 5*1024 * 1024
+   > app.config['UPLOAD_EXTENSIONS'] = ['.pdf']
 
 
 ## Running the Flask App
