@@ -46,7 +46,7 @@ This is a flask app that performs question-answering on various pdf files. You c
 
  We have defined a function in this file: <br>
    > app.config['MAX_CONTENT_LENGTH'] = 5*1024 * 1024
-   > app.config['UPLOAD_EXTENSIONS'] = ['.pdf']
+     app.config['UPLOAD_EXTENSIONS'] = ['.pdf']
 
 
 ## Running the Flask App
