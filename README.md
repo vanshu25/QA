@@ -42,7 +42,7 @@ This is a flask app that performs question-answering on various pdf files. You c
 ### app.py
 
 * This contains python code to run flask app where we have specified routes.
-* It is also specified that the maximum file size is 5 MB and allowed extension is .pdf
+* It is also specified that the maximum file size is 5 MB and allowed extension is '.pdf' only.
 
  We have defined a function in this file: <br>
    > app.config['MAX_CONTENT_LENGTH'] = 5*1024 * 1024 <br>
