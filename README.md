@@ -2,9 +2,7 @@
 
 This is a flask app that performs question-answering on various pdf files. You can use bunch of pdf files and can get contextual answers, either exact or most simillar, to given question. These days pdf files are generating at a very large scale. Using pdf files is really easy and can be useful in many cases. For example, you have a set of pdf files of annual reports of a company or have any other large number of pdf files from which you want to extract data then building a question-answering system can be very beneficial.
 
-![](https://github.com/vanshu25/Tryout_Project-Flask-App-for-answering-questions/blob/main/images/Screenshot%20(205).png)
-
-![](https://github.com/vanshu25/Tryout_Project-Flask-App-for-answering-questions/blob/main/images/Screenshot%20(204).png)
+![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/1.png)
 
 ## Project Structure
 
@@ -49,15 +47,13 @@ This is a flask app that performs question-answering on various pdf files. You c
 * And the last line is just to return the 'after.html' page where we can see the answer.
 
 
-Your Project directory should look like this:
-
-![](https://github.com/vanshu25/Tryout_Project-Flask-App-for-answering-questions/blob/main/images/Screenshot%20(203).png)
-
 ## Running the Flask App
 
 * Activate your virtual environment and then run 'flask run'
 * You can then go to the localhost on which the app is running.
 
-![](https://github.com/vanshu25/Tryout_Project-Flask-App-for-answering-questions/blob/main/images/Screenshot%20(206).png)
+![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/1.png)
 
-![](https://github.com/vanshu25/Tryout_Project-Flask-App-for-answering-questions/blob/main/images/Screenshot%20(207).png)
+![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/2.png)
+![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/3.png)
+![](https://github.com/vanshu25/Flask-App-for-answering-questions/blob/main/images/4.png)
